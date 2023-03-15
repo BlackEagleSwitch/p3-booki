@@ -104,6 +104,10 @@ main{
     row-gap: 8px;
 }
 
+form{
+    position: relative;
+}
+
 form .fa-location-dot {
     width: 50px;
     height: 49px;
@@ -145,6 +149,21 @@ form .submit:hover {
     box-shadow: 1px 1px 4px grey;
 }
 
+form .phone-submit{
+    display: none;
+    width: 49px;
+    height: 49px;
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+    background-color: #0065FC;
+    border-radius: 15px;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .filters,
 .filters div {
     display: flex;
@@ -171,6 +190,7 @@ form .submit:hover {
 
 .filters button::before{
     color: #0065FC;
+    width: 22px;
     font-size: 20px;
     font-weight: 900;
     font-family: 'Font Awesome 5 Free';
@@ -203,6 +223,7 @@ form .submit:hover {
     font-weight: 900;
     font-family: 'Font Awesome 5 Free';
 
+    min-width: 24px;
     width: 24px;
     height: 24px;
 
@@ -427,5 +448,125 @@ footer a:hover{
         height: 56px;
         font-size: 16px;
         padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        flex-direction: column;
+    }
+
+    header img{
+        margin: 30px auto;
+    }
+
+    header nav a,
+    header nav a:hover{
+        padding-top: unset;
+        border-top: none;
+
+        width: 50%;
+        padding-bottom: 15px;
+    }
+
+    header nav a{
+        border-bottom: solid 2px #F2F2F2;
+    }
+
+    header nav a:hover{
+        border-bottom: solid 2px #0065FC;
+    }
+
+    .presentation{
+        padding: 0 20px;
+    }
+
+    form .champ{
+        width: unset;
+    }
+
+    form .submit{
+        display: none;
+    }
+
+    form .phone-submit{
+        display: flex;
+    }
+
+    .filters,
+    .filters .container-button{
+        align-items: unset;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .container-button button{
+        width: 50%;
+        font-size: 14px;
+    }
+
+    .container-sections{
+        padding: unset;
+        row-gap: 5px;
+        flex-direction: column-reverse;
+    }
+
+    .container-sections section{
+        width: unset;
+        border-radius: unset;
+        padding: 30px 20px;
+        row-gap: 15px;
+    }
+
+    .container-sections .hebergement{
+        background-color: white;
+        padding: 30px 20px;
+    }
+
+    .hebergement .container-cards,
+    .popular .container-cards{
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .hebergement .container-cards a,
+    .container-cards a{
+        width: unset;
+    }
+
+    .hebergement article:hover,
+    .popular article:hover{
+        transform: none;
+    }
+
+    .activity{
+        margin: unset;
+    }
+
+    .activity .container-cards{
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .activity .container-cards a{
+        width: unset;
+    }
+
+    .activity a img{
+        height: 141px;
+    }
+
+    .activity a h3{
+        height: 59px;
+    }
+
+    footer{
+        margin: unset;
+        flex-direction: column;
+    }
+
+    footer div{
+        width: unset;
     }
 }
