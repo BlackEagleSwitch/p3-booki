@@ -367,3 +367,21 @@ form .submit:hover {
     align-items: center;
     padding-left: 19px;
 }
+
+footer{
+    display: flex;
+    margin: 0 50px;
+    background-color: #F2F2F2;
+}
+
+footer div{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    row-gap: 15px;
+}
+
+footer a:hover{
+    opacity: .5;
+}
