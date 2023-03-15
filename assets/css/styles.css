@@ -41,6 +41,14 @@ h4 {
     font-size: 16px;
 }
 
+article{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 20px;
+    background-color: white;
+}
+
 .blue{
     color: #0065FC;
 }
@@ -221,16 +229,7 @@ form .submit:hover {
     padding: 30px;
 }
 
-.container-cards article{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    border-radius: 20px;
-    background-color: white;
-    padding: 5px;
-}
-
-.container-cards article .container-text{
+.container-sections .container-text{
     display: flex;
     flex-direction: column;
     row-gap: 8px;
@@ -250,13 +249,14 @@ form .submit:hover {
     width: 33%;
 }
 
-.hebergement article:hover{
-    transform: scale(1.15);
-}
-
-.hebergement a article{
+.hebergement article{
     flex-direction: column;
     row-gap: 10px;
+    padding: 5px;
+}
+
+.hebergement article:hover{
+    transform: scale(1.15);
 }
 
 .hebergement article img{
@@ -306,6 +306,10 @@ form .submit:hover {
     height: 160px;
 }
 
+.popular article{
+    padding: 5px;
+}
+
 .popular article:hover{
     transform: scale(1.1);
 }
@@ -326,4 +330,40 @@ form .submit:hover {
     display: flex;
     flex-direction: column;
     row-gap: 5px;
+}
+
+.activity{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 30px;
+    margin: 0 50px;
+}
+
+.activity .container-cards{
+    display: flex;
+    column-gap: 30px;
+}
+
+.activity .container-cards a{
+    width: 25%;
+}
+
+.activity a article{
+    flex-direction: column;
+    box-shadow: 0 2px 4px #D9D9D9;
+}
+
+.activity article img{
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.activity h4{
+    height: 59px;
+    display: flex;
+    align-items: center;
+    padding-left: 19px;
 }
