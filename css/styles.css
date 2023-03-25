@@ -242,23 +242,21 @@ form .phone-submit {
 
 .hebergement {
     width: 66%;
+    height: 626px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 42px 40px 46px;
     background-color: #F2F2F2;
-}
-
-.hebergement h2 {
-    margin-bottom: 23px;
 }
 
 .hebergement .container-cards {
     display: flex;
     column-gap: 31px;
-    margin-bottom: 30px;
 }
 
 .hebergement .container-cards a {
     width: 33%;
-    height: 199px;
 }
 
 .hebergement article img {
@@ -269,7 +267,7 @@ form .phone-submit {
 }
 
 .hebergement article .container-text {
-    height: calc(100% - 120px);
+    height: calc(100% - 124px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -284,7 +282,6 @@ form .phone-submit {
 .hebergement .more {
     font-size: 18px;
     font-weight: 700;
-    margin-top: 40px;
 }
 
 .hebergement .more:hover {
@@ -323,12 +320,13 @@ form .phone-submit {
 }
 
 .popular article {
+    height: 145px;
     display: flex;
 }
 
 .popular article img {
-    width: 127px;
-    height: 134px;
+    width: 38%;
+    height: 100%;
     object-fit: cover;
     border-radius: 17px 0 0 17px;
 }
@@ -439,7 +437,9 @@ footer a:hover {
     }
 
     .popular article img {
-        width: 96px;
+        min-width: unset;
+        width: unset;
+        width: 40%;
     }
 
     .activity article img {
@@ -499,6 +499,16 @@ footer a:hover {
     .container-button button {
         width: 50%;
         font-size: 11px;
+        padding: 0 10px 0 20px;
+        position: relative;
+        justify-content: center;
+    }
+    
+    .filters button::before {
+        width: 22px;
+        font-size: 17px;
+        position: absolute;
+        left: 10px;
     }
 
     .container-sections {
@@ -526,8 +536,13 @@ footer a:hover {
     }
 
     .hebergement{
+        height: unset;
         padding: 26px 20px;
         background-color: white;
+    }
+
+    .hebergement h2{
+        margin-bottom: 19px;
     }
 
     .hebergement .container-cards{
